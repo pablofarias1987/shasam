@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView, LogoutView
 
 
+
 urlpatterns = [
 	path('', views.feed, name='feed'),
 	path('profile/', views.profile, name='profile'),
@@ -15,5 +16,7 @@ urlpatterns = [
 	path('post/', views.post, name='post'),
 	path('follow/<str:username>/', views.follow, name='follow'),
 	path('unfollow/<str:username>/', views.unfollow, name='unfollow'),
+	path('index/', views.index, name='index'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

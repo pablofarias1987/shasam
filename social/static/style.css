@@ -36,6 +36,7 @@ img{
 	object-fit: cover;
 }
 
+
 /* Nav bar */
 .main-head{
 	background: white;
@@ -132,6 +133,11 @@ article{
 	font-size: 1.1rem;
 }
 
+.container{
+  width: 93%;
+  height: 800px;
+	
+}
 .container-article{
   display: flex;
 }

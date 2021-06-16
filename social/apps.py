@@ -6,3 +6,6 @@ class SocialConfig(AppConfig):
 
     def ready(self):
     	import social.signals
+
+class VideoConfig(AppConfig):
+    name = 'video'

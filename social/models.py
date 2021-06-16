@@ -44,5 +44,10 @@ class Relationship(models.Model):
 		models.Index(fields=['from_user', 'to_user',]),
 		]
 
+class Video(models.Model):
+    caption=models.CharField(max_length=100)
+    video=models.FileField(upload_to="video/%y")
+    def __str__(self):
+        return self.caption
 
 
